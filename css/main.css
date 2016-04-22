@@ -1,0 +1,39 @@
+body{
+	background-color:#DCA7A7;
+}
+.center-item{
+	padding: 50px 10% 25% 10%;
+	
+}
+
+.center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+ .sm-spacer-row{
+   height: 100px;	
+ }
+  .md-spacer-row{
+   height: 200px;	
+ }
+  .lg-spacer-row{
+   min-height: 250px;	
+ }
+.main-message{
+	font-weight: 700;
+	font-size: larger;
+	padding: 10px 2px 10px 2px;
+}
+.attribution{
+	font-weight: 300;
+	font-size: smaller;
+	padding: 10px 2px 10px 2px;
+	text-align: right;
+}
+.panel-heading{
+	text-align: center;
+}
+div{
+	border: 1px solid purple; 
+}
