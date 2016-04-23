@@ -5,7 +5,14 @@ body{
 	padding: 50px 10% 25% 10%;
 	
 }
-
+.btn{
+	height: 28px;
+	width: 75px;
+	padding: 0px;
+}
+.right-side{
+	float:right;
+}
 .center-block {
   display: block;
   margin-left: auto;
