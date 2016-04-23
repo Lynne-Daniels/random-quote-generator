@@ -6,12 +6,38 @@ function getQuote(){
 });
 }
 
-$(document).ready(getQuote());  */
+$(document).ready(getQuote());  
+
+
+
 function changeColor(){
 //	$body.  change the backkground to random
-$(document).ready(function(){ $(#tweeter).click(change() { $(body).css("background-color":"blue"); }); });
-}
+  $(document).ready(function(){ $("#tweeter").click(change() { 
+    console.log("click");
+  $(body).css("background-color":"blue"); }); });
+	
 
+}
+*/
+    ! function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0],
+        p = /^http:/.test(d.location) ? 'http' : 'https';
+    if (!d.getElementById(id)) {
+        js = d.createElement(s);
+        js.id = id;
+        js.src = p + '://platform.twitter.com/widgets.js';
+        fjs.parentNode.insertBefore(js, fjs);
+    }
+}(document, 'script', 'twitter-wjs');
+    
+    
+$("#tweeter").click(function() { 
+    console.log("click");
+    //change to a random color.  thanks http://www.paulirish.com/2009/random-hex-color-code-snippets/
+   $('body').css("background-color",'#'+Math.floor(Math.random()*16777215).toString(16)); 
+});
+
+//'#'+Math.floor(Math.random()*16777215).toString(16);
 $('#get-another-quote-button').on('click', function(e) {
 	console.log("clicking");
     e.preventDefault();
@@ -36,4 +62,6 @@ $('#get-another-quote-button').on('click', function(e) {
    /*/sample json from quotegernerator:
   * [{"ID":864,"title":"Steven Heller","content":"<p>As a profession, graphic designers have been shamefully remiss or ineffective about plying their craft for social or political betterment.  <\/p>\n","link":"http:\/\/quotesondesign.com\/steven-heller\/"}]
   	*/
+ 
+ 
  
