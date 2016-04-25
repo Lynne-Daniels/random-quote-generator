@@ -22,6 +22,8 @@ function changeColor(){
 
 $( document ).ready(function() {
 
+//	getNewQuote(); that broke everything
+
     ! function(d, s, id) {
     var js, fjs = d.getElementsByTagName(s)[0],
         p = /^http:/.test(d.location) ? 'http' : 'https';
@@ -70,10 +72,15 @@ $('#get-another-quote-button').on('click', function(e) {
       cache: false
     });
   });
+  
+      setTimeout(function() {
+        $('#get-another-quote-button').trigger('click');
+    },10);
+  
  }); //end document ready function
    /*/sample json from quotegernerator:
   * [{"ID":864,"title":"Steven Heller","content":"<p>As a profession, graphic designers have been shamefully remiss or ineffective about plying their craft for social or political betterment.  <\/p>\n","link":"http:\/\/quotesondesign.com\/steven-heller\/"}]
   	*/
- 
+
  
  
