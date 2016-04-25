@@ -19,6 +19,9 @@ function changeColor(){
 
 }
 */
+
+$( document ).ready(function() {
+
     ! function(d, s, id) {
     var js, fjs = d.getElementsByTagName(s)[0],
         p = /^http:/.test(d.location) ? 'http' : 'https';
@@ -31,11 +34,20 @@ function changeColor(){
 }(document, 'script', 'twitter-wjs');
     
     
-$("#tweeter").click(function() { 
+$("#get-another-quote-button").click(function() { 
     console.log("click");
     //change to a random color.  thanks http://www.paulirish.com/2009/random-hex-color-code-snippets/
    $('body').css("background-color",'#'+Math.floor(Math.random()*16777215).toString(16)); 
 });
+
+$('#get-another-quote-button').on('click touchstart', function(){
+	console.log("touched");
+    //change to a random color.  thanks http://www.paulirish.com/2009/random-hex-color-code-snippets/
+   $('body').css("background-color",'#'+Math.floor(Math.random()*16777215).toString(16)); 
+});
+
+
+//document.getElementById ('get-another-quote-button').addEventListener("mousedown", function () { alert('I was clicked'); }, false);
 
 //'#'+Math.floor(Math.random()*16777215).toString(16);
 $('#get-another-quote-button').on('click', function(e) {
@@ -58,7 +70,7 @@ $('#get-another-quote-button').on('click', function(e) {
       cache: false
     });
   });
-  
+ }); //end document ready function
    /*/sample json from quotegernerator:
   * [{"ID":864,"title":"Steven Heller","content":"<p>As a profession, graphic designers have been shamefully remiss or ineffective about plying their craft for social or political betterment.  <\/p>\n","link":"http:\/\/quotesondesign.com\/steven-heller\/"}]
   	*/
