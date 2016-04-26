@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta content="IE=edge" http-equiv="X-UA-Compatible">
     <meta content="width=device-width, initial-scale=1" name="viewport">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <!-- Bootstrap says:  The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Random Quote Generator</title><!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
@@ -17,28 +17,22 @@
 </head>
 <body>
     <div class="container-fluid">
-    	<div class="row visible-vs-block vs-spacer-row">
-            vs Top Row
-        </div>
-        <div class="row visible-sm-block sm-spacer-row">
-            Small Top Row
-        </div>
-        <div class="row visible-md-block md-spacer-row">
-            Medium Top Row
-        </div>
-        <div class="row visible-lg active lg-spacer-row">
-            Large Top Row
-        </div>
+    	<!-- responsive amount of space above the quote panel-->
+    	<div class="row visible-vs-block vs-spacer-row"></div>
+        <div class="row visible-sm-block sm-spacer-row"></div>
+        <div class="row visible-md-block md-spacer-row"></div>
+        <div class="row visible-lg active lg-spacer-row"></div>
+        
+        <!-- The row contains 3 divs.  On either side a blank columnn increases with screen size, center column holds the quote panel and buttons -->
         <div class="row">
-            <div class="col-xs-12 col-sm-1 col-md-2 col-lg-3 col-xl-4">
-                left div
-            </div>
+
+            <div class="col-xs-12 col-sm-1 col-md-2 col-lg-3 col-xl-4"></div>
+            
             <div class=
             "col-xs-12 col-sm-10 col-md-8 col-lg-6 col-xl-4 center-block">
                 <div class="panel panel-default">
                     <div class="panel-heading">
                         <h3 class="panel-title">Quote-o-Matic</h3>
-
                     </div>
                     <div class="panel-body">
                         <div class="row main-message" id="quote-content">
@@ -47,25 +41,36 @@
                         <div class="row attribution" id="doineedquotetitlehere">
                             
                             <p id="quote-title">Quote source not reachable.</p>
-                        </div>
-
-                        
-                             <button class="btn btn-default" id="tweeter"
+                        </div>                   
+   <!--                          <button class="btn btn-default" id="tweeter"
                                 name="tweet" type="button"><a class=
                                 "twitter-share-button" data-size="large" href=
-                                "https://twitter.com/intent/tweet?text=Hello%20world">
+                                "https://twitter.com/intent/tweet?text=Hello%20world"
+                                text = "testing tweet test">
+                                
                               </a></button>  
+                              
+<!--https://dev.twitter.com/web/tweet-button/parameters --> 
+<div id = tweeter>                             
+                              <a class="twitter-share-button"
+  href="https://twitter.com/share"
+  data-size="large"
+  data-url="https://dev.twitter.com/web/tweet-button"
+  data-via="twitterdev"
+  data-related="twitterapi,twitter"
+  data-hashtags="example,demo"
+  data-text="custom share text">
+Tweet
+</a>
+</div>                            
+                              
                             <button class="btn btn-default right-side" id=
                                 "get-another-quote-button" name="new-quote"
                                 type="button">New Quote</button>
-                          
-      
                     </div>
                 </div>
-            </div><!--column?-->
-            <div class="col-xs-12 col-sm-1 col-md-2 col-lg-3 col-xl-4">
-                right div
-            </div>
+            </div><!-- center-block ends here-->
+            <div class="col-xs-12 col-sm-1 col-md-2 col-lg-3 col-xl-4"></div>
         </div>
     </div><!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src=

@@ -1,16 +1,12 @@
 .center-item{
 	padding: 50px 10% 25% 10%;
-	
 }
 .btn{
 	height: 28px;
 	width: 75px;
 	padding: 0px;
-	cursor: pointer; /*did not make onclick work on iphone :-(??)*/
 }
-.clickoniphone{
-	cursor: pointer;
-}
+
 .right-side{
 	float:right;
 }
@@ -44,13 +40,3 @@
 }
 .panel-heading{
 	text-align: center;
-}
-div{
-	border: 1px solid purple; 
-}
-.side-div{
-	border: 2px solid blue;
-}
-.center-block{
-	border: 4px solid red;
-}
