@@ -1,3 +1,7 @@
+body{
+	font-family: 'Cardo', serif;
+}
+
 .center-item{
 	padding: 50px 10% 25% 10%;
 }
@@ -28,9 +32,9 @@
    min-height: 250px;	
  }
 .main-message{
-	font-weight: 700;
-	font-size: larger;
-	padding: 10px 2px 10px 2px;
+	
+	font-size: 1.5em;
+	padding: 5% 10%;
 }
 .attribution{
 	font-weight: 300;

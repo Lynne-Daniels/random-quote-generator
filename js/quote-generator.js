@@ -50,7 +50,7 @@ $('#get-another-quote-button').on('click', function(e) {
 	//make a new tweeter button, specific to new quote
 	//I tried to change the text property, but twitter made some sort of security error.
 	twttr.widgets.createShareButton(
-  'https://dev.twitter.com/',
+  'http://waywardpoints.com/random-quote-generator/',
   document.getElementById('tweeter'),
   {
     text: $('#quote-content > p').text(),
